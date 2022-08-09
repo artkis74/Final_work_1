@@ -9,12 +9,7 @@ if __name__ == '__main__':
     my_disk = YandexDisk()
     folder = "Final_work#1"
     print(my_disk.create_new_folder(folder))
-    with open('vk_data.txt', 'r') as file:
-        token = file.readline().strip()
-        id_vk = file.readline().strip()
-    access_token = token
-    user_id = id_vk
-    vk = VK(access_token, user_id)
+    vk = VK()
     answer = vk.get_photos()
     images = []
     for data in answer['response']['items']:
