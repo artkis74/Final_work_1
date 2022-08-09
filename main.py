@@ -10,7 +10,7 @@ if __name__ == '__main__':
     folder = "Final_work#1"
     print(my_disk.create_new_folder(folder))
     vk = VK()
-    answer = vk.get_photos()
+    answer = vk.get_photos_prof()
     images = []
     for data in answer['response']['items']:
         data_image = {}
